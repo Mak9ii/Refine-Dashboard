@@ -9,7 +9,6 @@ import { DASHBOARD_TOTAL_COUNTS_QUERY } from "@/graphql/queries";
 import { DashboardTotalCountsQuery } from "@/graphql/types";
 import { useCustom } from "@refinedev/core";
 import { Col, Row } from "antd";
-import React from "react";
 
 export function Home() {
   const { data, isLoading } = useCustom<DashboardTotalCountsQuery>({

@@ -8,7 +8,10 @@ function Layout({ children }: React.PropsWithChildren) {
       <ThemedLayoutV2
         Header={Header}
         Title={(titleProps) => (
-          <ThemedTitleV2 {...titleProps} text="Refine"></ThemedTitleV2>
+          <ThemedTitleV2
+            {...titleProps}
+            text="Refine-Dashboard"
+          ></ThemedTitleV2>
         )}
       >
         {children}
