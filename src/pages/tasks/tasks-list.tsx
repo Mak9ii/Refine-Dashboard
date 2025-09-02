@@ -126,7 +126,7 @@ export const TasksList = ({ children }: React.PropsWithChildren) => {
               key={column.id}
               title={column.title}
               count={column.tasks?.length || 0}
-              onAddClick={() => {}}
+              onAddClick={() => handleAddCard({ stageId: column.id })}
             >
               {!isLoading &&
                 column.tasks.map((task) => (
